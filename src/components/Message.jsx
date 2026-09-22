@@ -14,9 +14,9 @@ export default function Message() {
   return (
     <section id="notice" className="w-full bg-[#E0F7FA] py-10">
       <div className="w-full px-4">
-        
+
         <div className="w-full overflow-hidden rounded-6px border border-slate-300 bg-[#E0F7FA] shadow-[0_10px_28px_rgba(0,0,0,0.18)]">
-          
+
           <div className="flex items-center justify-between bg-[#19366b] px-3 py-3 sm:px-6">
             <div className="w-28 text-left text-[11px] font-semibold uppercase tracking-wide text-white leading-tight pr-2 sm:w-180px sm:text-sm sm:pr-4">
               RECENT
@@ -44,9 +44,9 @@ export default function Message() {
             </div>
           </div>
 
-          
+
           <div className="bg-[#E0F7FA] px-6 py-6">
-            
+
             <div className="rounded-[14px] bg-[#E8E8E8] p-6 shadow-[0_6px_18px_rgba(0,0,0,0.12)]">
               <div className="max-w-none text-[15px] leading-relaxed text-slate-800">
                 <p className="mb-4">Dear NSS Family and Friends,</p>
@@ -70,9 +70,9 @@ export default function Message() {
               </div>
             </div>
 
-            
+
             <div className="mt-6 space-y-6">
-              
+
               <div className="flex flex-col items-center gap-4 rounded-[14px] border-2 border-black bg-white p-6 text-center shadow-[0_8px_22px_rgba(0,0,0,0.20)] sm:flex-row sm:items-start sm:gap-5 sm:text-left">
                 <img
                   src="/Manna.png"
@@ -99,7 +99,7 @@ export default function Message() {
                 </div>
               </div>
 
-              
+
               <div className="flex flex-col items-center gap-4 rounded-[14px] border-2 border-black bg-white p-6 text-center shadow-[0_8px_22px_rgba(0,0,0,0.20)] sm:flex-row sm:items-start sm:gap-5 sm:text-left">
                 <img
                   src="/Pandey.png"
@@ -125,10 +125,10 @@ export default function Message() {
             </div>
 
           </div>
-          
+
         </div>
 
-        
+
         <div className="mt-8 rounded-[14px] bg-[#E0F7FA] p-6 shadow-[0_6px_18px_rgba(0,0,0,0.12)] sm:p-8">
           <div className="mb-8 flex items-end justify-between">
             <h2 className="text-2xl font-extrabold text-[#19366b] sm:text-3xl">
