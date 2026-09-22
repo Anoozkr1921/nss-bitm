@@ -1,3 +1,4 @@
+import { ZoomIn } from "lucide-react";
 
 
 const teamData = {
@@ -68,8 +69,8 @@ const teamData = {
         },
         {
             role: "Cyber & Web Coordinator",
-            name: "AYUSHMAN AGARWAL",
-            image: "/teams/cybercoordinator.png",
+            name: "KUSHAGRA BHATNAGAR",
+            image: "/teams/Kushagra-Bhatnagar.png",
             linkedin: "https://www.linkedin.com/in/ayushman-agarwal-a08b9b160/",
             instagram: "",
         },
@@ -88,11 +89,11 @@ const teamData = {
             instagram: "",
         },
         {
-            role: "Coverage Coordinator",
-            name: "SHRUTI TANDON",
-            image: "/teams/Coverage-Coordinator.jpg",
-            linkedin: "https://www.linkedin.com/in/contactshrutitandon/",
-            instagram: "https://www.instagram.com/shruti._.tandon?igsh=MXZoc3Zzc2ZtdzN6cw==",
+            role: "Coverage Head",
+            name: "ASHLEY JAIN",
+            image: "/teams/Ashley-Jain.png",
+            linkedin: "",
+            instagram: "",
         },
         {
             role: "General Secretary",
@@ -110,10 +111,10 @@ const teamData = {
         },
         {
             role: "Joint General Secretary",
-            name: "DIPTANGSHU BAIDYA",
-            image: "/teams/Joint-GeneralSecretrary.jpg",
-            linkedin: "https://www.linkedin.com/in/diptangshubaidya/",
-            instagram: "https://www.instagram.com/diptangshu_10/",
+            name: "Ritesh Kumar",
+            image: "/teams/Ritesh-Kumar.png",
+            linkedin: "",
+            instagram: "",
         },
         {
             role: "Joint General Secretary",
@@ -130,29 +131,30 @@ const teamData = {
             instagram: "https://www.instagram.com/ayushnigam_24?igsh=MWlkczRvMzYybm9tdQ==",
         },
         {
-            role: "Treasurer",
-            name: "UDIT RAJ",
-            image: "/teams/treasurer2.png",
-            linkedin: "https://www.linkedin.com/in/udit-raj-7b2203245/",
-            instagram: "https://www.instagram.com/uditraj1098/",
+            role: "Joint Treasurer",
+            name: "HARSH KUMAR",
+            ZoomIn: 3,
+            image: "/teams/Harsh-Kumar.png",
+            linkedin: "",
+            instagram: "",
         },
         {
             role: "Joint Treasurer",
-            name: "ROMIL RAJ",
-            image: "/teams/Joint-Treasurer.png",
-            linkedin: "https://www.linkedin.com/in/romil-raj-80983728a/?originalSubdomain=in",
-            instagram: "https://www.instagram.com/raj_romil_?igsh=MXcwcnVlYWVmNGZqcQ==",
+            name: "ASHISH KUMAR",
+            image: "/teams/Ashish-Kumar.png",
+            linkedin: "",
+            instagram: "",
         },
     ],
 
-    
+
     teams: [
         {
             teamName: "Cyber & Web Team",
             assistantCoordinators: [
                 { name: "RAKSHIT KUMAR", image: "/teams/Cyber&Web-assistent-coordinator.jpg", linkedin: "https://www.linkedin.com/in/rakshit-kumar-9979b1292/", instagram: "https://www.instagram.com/rakshit___kumar?igsh=eGJlZm85ZDRoMTFt" },
             ],
-            
+
         },
 
 
@@ -160,13 +162,13 @@ const teamData = {
             teamName: "Event Team",
             assistantCoordinators: [
                 {
-                name: "ABHINAV SAHU",
-                image: "/teams/assistantCoordinator(Events).jpg",
-                linkedin: "",
-                instagram: "https://www.instagram.com/strangr.dreamr?igsh=ZjR3N3Azb25kNHZt" 
-            },
+                    name: "ABHINAV SAHU",
+                    image: "/teams/assistantCoordinator(Events).jpg",
+                    linkedin: "",
+                    instagram: "https://www.instagram.com/strangr.dreamr?igsh=ZjR3N3Azb25kNHZt"
+                },
             ],
-            
+
         },
 
         {
@@ -174,27 +176,27 @@ const teamData = {
             assistantCoordinators: [
                 { name: "SHANTANU", image: "/teams/design_asst-coordinator.jpg", linkedin: "https://www.linkedin.com/in/shantanu-864029304/", instagram: "https://www.instagram.com/shantanu.zype/" },
             ],
-            
+
         },
 
         {
             teamName: "Media & Publicity Team",
             assistantCoordinators: [
                 { name: "SHREEEYA GUPTA", image: "/teams/assistant-coordinator(media_publicity).jpg", linkedin: "https://www.linkedin.com/in/shreeya-gupta-385a262ab/", instagram: "https://www.instagram.com/allthebrightangles?igsh=MXNxNWxlaW10dnppMg==" },
-                
-                
+
+
             ],
-            
+
         },
 
-        
+
 
         {
             teamName: "Coverage Team",
             assistantCoordinators: [
                 { name: "SARTHAK SHAURYA", image: "/teams/Asst-Coordinator(Coverage).jpg", linkedin: "https://www.linkedin.com/in/sarthak-shaurya-890279355/", instagram: "" },
             ],
-            
+
         },
 
         {
@@ -202,7 +204,7 @@ const teamData = {
             assistantCoordinators: [
                 { name: "NANDINI KUMARI", image: "/teams/assistant-coordinator(resource).jpg", linkedin: "https://www.linkedin.com/in/nandnikumari/?originalSubdomain=in", instagram: "" },
             ],
-            
+
         },
 
         {
@@ -210,7 +212,7 @@ const teamData = {
             assistantCoordinators: [
                 { name: "PRAKRITI KUMARI", image: "/teams/Vep-AssistantCoordinator.jpg", linkedin: "https://www.linkedin.com/in/prakriti-kumari-1194632b8/?originalSubdomain=in", instagram: "" },
             ],
-            
+
         },
     ],
 };

@@ -47,12 +47,21 @@ export default function Navbar() {
           
           <div className="bg-white px-4 py-4 sm:px-10 sm:py-6">
             <div className="flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between gap-3 sm:gap-6">
-              <img src="/logos/nss_logo.png" className="h-10 sm:h-20 w-auto object-contain" />
-              <img src="/logos/mybharat-logo 1.png" className="h-9 sm:h-16 w-auto object-contain" />
-              <img src="/logos/yas-logo 1.png" className="h-9 sm:h-16 w-auto object-contain" />
-              <img src="/logos/viksit-bharat-logo 1.png" className="h-9 sm:h-16 w-auto object-contain" />
-              <img src="/logos/digital-india 1.png" className="h-8 sm:h-14 w-auto object-contain" />
-              <img src="/logos/bit_mesra.png" className="h-10 sm:h-20 w-auto object-contain" />
+              <a href="https://www.bitmesra.ac.in" target="_blank" rel="noopener noreferrer">
+                <img src="/logos/bit_mesra.png" alt="BIT Mesra" className="h-10 sm:h-20 w-auto object-contain transition-transform duration-200 hover:scale-105" />
+              </a>
+              <a href="https://mybharat.gov.in" target="_blank" rel="noopener noreferrer">
+                <img src="/logos/mybharat-logo 1.png" alt="My Bharat" className="h-9 sm:h-16 w-auto object-contain transition-transform duration-200 hover:scale-105" />
+              </a>
+              <a href="https://yas.gov.in" target="_blank" rel="noopener noreferrer">
+                <img src="/logos/yas-logo 1.png" alt="Ministry of Youth Affairs and Sports" className="h-9 sm:h-16 w-auto object-contain transition-transform duration-200 hover:scale-105" />
+              </a>
+              <a href="https://www.digitalindia.gov.in" target="_blank" rel="noopener noreferrer">
+                <img src="/logos/digital-india 1.png" alt="Digital India" className="h-8 sm:h-14 w-auto object-contain transition-transform duration-200 hover:scale-105" />
+              </a>
+              <a href="https://nss.gov.in" target="_blank" rel="noopener noreferrer">
+                <img src="/logos/nss_logo.png" alt="NSS" className="h-10 sm:h-20 w-auto object-contain transition-transform duration-200 hover:scale-105" />
+              </a>
             </div>
           </div>
 
