@@ -69,8 +69,8 @@ const teamData = {
         },
         {
             role: "Cyber & Web Coordinator",
-            name: "",
-            image: "",
+            name: "KUSHAGRA BHATNAGAR",
+            image: "/teams/Kushagra-Bhatnagar.png",
             linkedin: "https://www.linkedin.com/in/ayushman-agarwal-a08b9b160/",
             instagram: "",
         },
@@ -90,24 +90,24 @@ const teamData = {
         },
         {
             role: "Coverage Head",
-            name: "",
-            image: "",
+            name: "ASHLEY JAIN",
+            image: "/teams/Ashley-Jain.png",
             linkedin: "",
             instagram: "",
         },
         {
             role: "General Secretary",
-            name: "ANAND KUMAR",
-            image: "/teams/Anand-Kumar.png",
+            name: "PURUSHOTTAM KUMAR",
+            image: "/teams/General-Secretary.jpg",
             linkedin: "https://www.linkedin.com/in/purushottam405/",
             instagram: "https://www.instagram.com/snap_speaks_/",
         },
         {
             role: "General Secretary",
-            name: "VANSHIKA",
-            image: "/teams/Vanshika.png",
-            linkedin: "",
-            instagram: "",
+            name: "SHRUTI SUMAN",
+            image: "/teams/GeneralSecretary.jpg",
+            linkedin: "https://www.linkedin.com/in/shruti-suman-46a1b0315/",
+            instagram: "https://www.instagram.com/_shrutikeshri_/",
         },
         {
             role: "Joint General Secretary",
@@ -125,10 +125,10 @@ const teamData = {
         },
         {
             role: "Treasurer",
-            name: "DIVESH",
-            image: "/teams/Divesh.png",
-            linkedin: "",
-            instagram: "",
+            name: "AYUSH NIGAM",
+            image: "/teams/Treasurer.jpg",
+            linkedin: "https://www.linkedin.com/in/ayush-nigam-5795022b0/",
+            instagram: "https://www.instagram.com/ayushnigam_24?igsh=MWlkczRvMzYybm9tdQ==",
         },
         {
             role: "Joint Treasurer",
@@ -151,11 +151,12 @@ const teamData = {
     teams: [
         {
             teamName: "Cyber & Web Team",
-
             assistantCoordinators: [
-                { name: "KUSHAGRA BHATNAGAR", image: "/teams/Kushagra-Bhatnagar.png", linkedin: "", instagram: "" },
+                { name: "RAKSHIT KUMAR", image: "/teams/Cyber&Web-assistent-coordinator.jpg", linkedin: "https://www.linkedin.com/in/rakshit-kumar-9979b1292/", instagram: "https://www.instagram.com/rakshit___kumar?igsh=eGJlZm85ZDRoMTFt" },
             ],
+
         },
+
 
         {
             teamName: "Event Team",
@@ -188,10 +189,12 @@ const teamData = {
 
         },
 
+
+
         {
             teamName: "Coverage Team",
             assistantCoordinators: [
-                { name: "ASHLEY JAIN", image: "/teams/Ashley-Jain.png", linkedin: "", instagram: "" },
+                { name: "SARTHAK SHAURYA", image: "/teams/Asst-Coordinator(Coverage).jpg", linkedin: "https://www.linkedin.com/in/sarthak-shaurya-890279355/", instagram: "" },
             ],
 
         },
