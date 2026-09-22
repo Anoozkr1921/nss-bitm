@@ -118,8 +118,8 @@ const teamData = {
         },
         {
             role: "Joint General Secretary",
-            name: "SEJAL KESHRI",
-            image: "/teams/Joint-gensec.jpg",
+            name: "SOURAV KUMAR",
+            image: "/teams/Sourav.png",
             linkedin: "",
             instagram: "",
         },
