@@ -1,6 +1,8 @@
 import React from "react";
 import teamData from "../data/TeamData";
 import { FaLinkedin, FaInstagram, FaEnvelope, FaUser } from "react-icons/fa";
+import SEO from "../components/SEO";
+import { getBreadcrumbSchema } from "../lib/seo.js";
 
 const TeamCard = ({ image, name, role, linkedin, instagram, email }) => {
   return (
@@ -94,6 +96,16 @@ const TeamCard = ({ image, name, role, linkedin, instagram, email }) => {
 const Teams = () => {
   return (
     <div className="relative min-h-screen bg-slate-50 overflow-hidden">
+      <SEO
+        title="Our Team"
+        description="Meet the student coordinators and faculty advisors leading NSS BIT Mesra."
+        canonicalUrl="/teams"
+        image="/teams/President.jpg"
+        schema={getBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "Teams", item: "/teams" },
+        ])}
+      />
 
       {/* Background Patriotic Mesh Blobs */}
       <div className="absolute top-0 left-0 w-full h-full -z-0 pointer-events-none">
@@ -157,7 +169,7 @@ const Teams = () => {
                     key={cIdx}
                     image={m?.image}
                     name={m?.name}
-                    role={m?.role || "Incharge"}
+                    role="Team Incharge"
                     linkedin={m?.linkedin}
                     instagram={m?.instagram}
                     email={m?.email}
