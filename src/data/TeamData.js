@@ -88,7 +88,7 @@ const teamData = {
                     role: "Web Incharge",
                     image: "/teams/web cyber coordnator.png",
 
-                    instagram: "",
+
                 },
                 {
                     name: "Arvind Paswan",
