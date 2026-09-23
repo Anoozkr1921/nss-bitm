@@ -5,12 +5,13 @@ import { FaLinkedin, FaInstagram, FaEnvelope, FaUser } from "react-icons/fa";
 const TeamCard = ({ image, name, role, linkedin, instagram, email }) => {
   return (
     <div
-      className="relative group bg-white rounded-3xl shadow-lg 
+      className="relative group bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] 
                  w-full max-w-[280px] h-[360px] mx-auto
                  flex flex-col items-center justify-start
-                 pt-10 pb-6 px-6 text-center
+                 pt-9 pb-6 px-6 text-center
+                 border border-slate-100
                  transition-all duration-300
-                 hover:-translate-y-2 hover:shadow-2xl"
+                 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-900/10"
     >
       {/* NSS tricolor accent (top line) */}
       <span className="absolute inset-x-0 top-0 h-1 rounded-t-3xl bg-gradient-to-r from-[#FF9933] via-white to-[#138808]" />
@@ -24,8 +25,8 @@ const TeamCard = ({ image, name, role, linkedin, instagram, email }) => {
       />
 
       {/* Avatar */}
-      <div className="w-40 h-40 rounded-full overflow-hidden 
-                      border-4 border-white shadow-md z-10 bg-slate-100 flex items-center justify-center">
+      <div className="w-36 h-36 rounded-full overflow-hidden 
+                      border-4 border-white shadow-[0_4px_16px_rgba(0,0,0,0.08)] z-10 bg-slate-50 flex items-center justify-center">
         {image ? (
           <img
             src={image}
@@ -39,34 +40,30 @@ const TeamCard = ({ image, name, role, linkedin, instagram, email }) => {
             className="w-full h-full object-cover"
           />
         ) : null}
-        <div className={`w-full h-full flex items-center justify-center bg-slate-200 text-slate-400 ${image ? "hidden" : ""}`}>
-          <FaUser size={56} />
+        <div className={`w-full h-full flex items-center justify-center bg-[#f4f7fb] text-[#19366b] ${image ? "hidden" : ""}`}>
+          <FaUser size={48} className="text-[#19366b]" />
         </div>
       </div>
 
       {/* Text */}
-      <h3 className="mt-6 text-xl font-bold text-gray-900 z-10">
+      <h3 className="mt-5 text-xl font-bold text-[#19366b] z-10 leading-snug">
         {name}
       </h3>
-      <p className="text-base text-gray-500 z-10">
+      <p className="mt-1 text-sm md:text-base font-medium text-[#19366b]/80 z-10">
         {role}
       </p>
 
-      {/* Social Icons (HOVER ONLY) */}
-      <div
-        className="mt-5 flex gap-4 z-10
-                   opacity-0 translate-y-2
-                   transition-all duration-300
-                   group-hover:opacity-100 group-hover:translate-y-0"
-      >
+      {/* Social Icons */}
+      <div className="mt-3 flex items-center justify-center gap-3 z-10 min-h-[30px]">
         {linkedin && (
           <a
             href={linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 hover:text-[#0A66C2] transition-colors"
+            className="text-[#0A66C2] hover:scale-110 transition-transform"
+            aria-label="LinkedIn"
           >
-            <FaLinkedin size={22} />
+            <FaLinkedin size={24} />
           </a>
         )}
         {instagram && (
@@ -74,15 +71,17 @@ const TeamCard = ({ image, name, role, linkedin, instagram, email }) => {
             href={instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 hover:text-[#E1306C] transition-colors"
+            className="text-[#E1306C] hover:scale-110 transition-transform"
+            aria-label="Instagram"
           >
-            <FaInstagram size={22} />
+            <FaInstagram size={24} />
           </a>
         )}
         {email && (
           <a
             href={`mailto:${email}`}
-            className="text-gray-600 hover:text-gray-900 transition-colors"
+            className="text-[#19366b] hover:text-[#FF9933] hover:scale-110 transition-transform"
+            aria-label="Email"
           >
             <FaEnvelope size={22} />
           </a>
@@ -131,31 +130,42 @@ const Teams = () => {
         </div>
 
         {/* SUB TEAMS */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-24" />
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-20" />
 
-        <h2 className="text-4xl font-extrabold mb-14 text-center text-[#19366b] tracking-tight">
-          Sub Teams
-        </h2>
+        <div className="text-center mb-14">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#19366b] tracking-tight">
+            Sub Teams
+          </h2>
+          {/* NSS Tricolor underline */}
+          <div className="w-20 h-1 mx-auto mt-3 rounded-full bg-gradient-to-r from-[#FF9933] via-slate-200 to-[#138808] shadow-sm" />
+        </div>
 
-        <div className="grid gap-16 sm:grid-cols-2 lg:grid-cols-3">
-          {teamData.teams.map((team, idx) => {
-            const m = team.assistantCoordinators?.[0];
-            return (
-              <div key={idx} className="flex flex-col items-center">
-                <h3 className="text-2xl font-bold mb-8 text-[#19366b] text-center bg-white/50 px-4 py-1 rounded-full border border-blue-900/10 shadow-sm">
+        <div className="space-y-16">
+          {teamData.teams.map((team, idx) => (
+            <div key={idx} className="flex flex-col items-center">
+              {/* Team Name Pill */}
+              <div className="inline-flex items-center justify-center bg-white/90 border border-blue-200/80 shadow-sm px-8 py-2 md:px-10 md:py-2.5 rounded-full mb-8">
+                <h3 className="text-xl md:text-2xl font-bold text-[#19366b]">
                   {team.teamName}
                 </h3>
-
-                <TeamCard
-                  image={m?.image}
-                  name={m?.name}
-                  role="Assistant Coordinator"
-                  linkedin={m?.linkedin}
-                  instagram={m?.instagram}
-                />
               </div>
-            );
-          })}
+
+              {/* Team Cards */}
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 w-full max-w-5xl">
+                {team.assistantCoordinators.map((m, cIdx) => (
+                  <TeamCard
+                    key={cIdx}
+                    image={m?.image}
+                    name={m?.name}
+                    role="Assistant Coordinator"
+                    linkedin={m?.linkedin}
+                    instagram={m?.instagram}
+                    email={m?.email}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

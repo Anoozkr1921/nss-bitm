@@ -89,38 +89,11 @@ const teamData = {
                     linkedin: "https://www.linkedin.com/in/ayushman-agarwal-a08b9b160/",
                     instagram: "",
                 },
-            ],
-        },
-        {
-            teamName: "Event Team",
-            assistantCoordinators: [
                 {
-                    name: "Abhinav Sahu",
-                    image: "",
+                    name: "Arvind Paswan",
+                    image: "/teams/web_incharge.jpg",
                     linkedin: "",
                     instagram: "https://www.instagram.com/strangr.dreamr?igsh=ZjR3N3Azb25kNHZt",
-                },
-            ],
-        },
-        {
-            teamName: "Design Team",
-            assistantCoordinators: [
-                {
-                    name: "Shantanu",
-                    image: "",
-                    linkedin: "https://www.linkedin.com/in/shantanu-864029304/",
-                    instagram: "https://www.instagram.com/shantanu.zype/",
-                },
-            ],
-        },
-        {
-            teamName: "Media & Publicity Team",
-            assistantCoordinators: [
-                {
-                    name: "Shreeya Gupta",
-                    image: "",
-                    linkedin: "https://www.linkedin.com/in/shreeya-gupta-385a262ab/",
-                    instagram: "https://www.instagram.com/allthebrightangles?igsh=MXNxNWxlaW10dnppMg==",
                 },
             ],
         },
@@ -128,31 +101,8 @@ const teamData = {
             teamName: "Coverage Team",
             assistantCoordinators: [
                 {
-                    name: "Sarthak Shaurya",
-                    image: "",
-                    linkedin: "https://www.linkedin.com/in/sarthak-shaurya-890279355/",
-                    instagram: "",
-                },
-            ],
-        },
-        {
-            teamName: "Resources Team",
-            assistantCoordinators: [
-                {
-                    name: "Nandini Kumari",
-                    image: "",
-                    linkedin: "https://www.linkedin.com/in/nandnikumari/?originalSubdomain=in",
-                    instagram: "",
-                },
-            ],
-        },
-        {
-            teamName: "Village Literacy Team",
-            assistantCoordinators: [
-                {
-                    name: "Prakriti Kumari",
-                    image: "",
-                    linkedin: "https://www.linkedin.com/in/prakriti-kumari-1194632b8/?originalSubdomain=in",
+                    name: "Ashley Jain",
+                    image: "/teams/coverage_ic.jpg",
                     instagram: "",
                 },
             ],
