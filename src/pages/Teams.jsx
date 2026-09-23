@@ -1,6 +1,6 @@
 import React from "react";
 import teamData from "../data/TeamData";
-import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaEnvelope, FaUser } from "react-icons/fa";
 
 const TeamCard = ({ image, name, role, linkedin, instagram, email }) => {
   return (
@@ -25,12 +25,23 @@ const TeamCard = ({ image, name, role, linkedin, instagram, email }) => {
 
       {/* Avatar */}
       <div className="w-40 h-40 rounded-full overflow-hidden 
-                      border-4 border-white shadow-md z-10">
-        <img
-          src={image || "/team/placeholder.jpg"}
-          alt={name}
-          className="w-full h-full object-cover"
-        />
+                      border-4 border-white shadow-md z-10 bg-slate-100 flex items-center justify-center">
+        {image ? (
+          <img
+            src={image}
+            alt={name}
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+              if (e.currentTarget.nextSibling) {
+                e.currentTarget.nextSibling.style.display = "flex";
+              }
+            }}
+            className="w-full h-full object-cover"
+          />
+        ) : null}
+        <div className={`w-full h-full flex items-center justify-center bg-slate-200 text-slate-400 ${image ? "hidden" : ""}`}>
+          <FaUser size={56} />
+        </div>
       </div>
 
       {/* Text */}
@@ -100,9 +111,9 @@ const Teams = () => {
       {/* Content Container */}
       <div className="relative z-10 px-6 py-16 max-w-7xl mx-auto">
 
-        {/* EXECUTIVE BODY */}
+        {/* PRESIDENTIAL BODY */}
         <h2 className="text-4xl font-extrabold mb-14 text-center text-[#19366b] tracking-tight">
-          Executive Body
+          PRESIDENTIAL BODY
         </h2>
 
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 mb-32">
