@@ -3,7 +3,7 @@ const teamData = {
         {
             role: "Chairperson",
             name: "Dr. Praveen Srivastava",
-            image: "/praveen_srivastva.jpeg",
+            image: "/dosa.jpg",
             linkedin: "https://www.linkedin.com/in/praveen-srivastava-85b59517/",
             instagram: "",
         },
