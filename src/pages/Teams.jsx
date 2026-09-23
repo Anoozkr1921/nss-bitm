@@ -169,7 +169,7 @@ const Teams = () => {
                     key={cIdx}
                     image={m?.image}
                     name={m?.name}
-                    role="Assistant Coordinator"
+                    role="Team Incharge"
                     linkedin={m?.linkedin}
                     instagram={m?.instagram}
                     email={m?.email}
