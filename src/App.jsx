@@ -8,6 +8,8 @@ import ActivityPage from "./components/ActivityPage";
 import GovernmentSchemes from "./pages/GovernmentSchemes";
 import Events from "./components/Events";
 import Notices from "./pages/Notices";
+import SEO from "./components/SEO";
+import { getBreadcrumbSchema } from "./lib/seo.js";
 
 export default function App() {
   return (
@@ -17,6 +19,11 @@ export default function App() {
           path="/"
           element={
             <>
+              <SEO
+                canonicalUrl="/"
+                image="/og-image.png"
+                schema={getBreadcrumbSchema([{ name: "Home", item: "/" }])}
+              />
               <Hero />
               <Message />
             </>
