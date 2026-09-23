@@ -82,26 +82,29 @@ const teamData = {
     teams: [
         {
             teamName: "Cyber & Web Team",
-            assistantCoordinators: [
+            incharges: [
                 {
                     name: "Kushagra Bhatnagar",
+                    role: "Web Incharge",
                     image: "/teams/web cyber coordnator.png",
-                    linkedin: "https://www.linkedin.com/in/ayushman-agarwal-a08b9b160/",
+
                     instagram: "",
                 },
                 {
                     name: "Arvind Paswan",
+                    role: "Web Incharge",
                     image: "/teams/web_incharge.jpg",
                     linkedin: "",
-                    instagram: "https://www.instagram.com/strangr.dreamr?igsh=ZjR3N3Azb25kNHZt",
+
                 },
             ],
         },
         {
             teamName: "Coverage Team",
-            assistantCoordinators: [
+            incharges: [
                 {
                     name: "Ashley Jain",
+                    role: "Coverage Incharge",
                     image: "/teams/coverage_ic.jpg",
                     instagram: "",
                 },

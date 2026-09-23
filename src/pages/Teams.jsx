@@ -152,12 +152,12 @@ const Teams = () => {
 
               {/* Team Cards */}
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 w-full max-w-5xl">
-                {team.assistantCoordinators.map((m, cIdx) => (
+                {(team.incharges || team.assistantCoordinators || []).map((m, cIdx) => (
                   <TeamCard
                     key={cIdx}
                     image={m?.image}
                     name={m?.name}
-                    role="Assistant Coordinator"
+                    role={m?.role || "Incharge"}
                     linkedin={m?.linkedin}
                     instagram={m?.instagram}
                     email={m?.email}
