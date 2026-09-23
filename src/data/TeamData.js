@@ -17,7 +17,7 @@ const teamData = {
         {
             role: "President",
             name: "Purushottam Kumar",
-            image: "/teams/president.jpg",
+            image: "/teams/President.jpg",
             linkedin: "https://www.linkedin.com/in/purushottam405/",
             instagram: "https://www.instagram.com/snap_speaks_/",
         },
@@ -66,7 +66,7 @@ const teamData = {
         {
             role: "Treasurer",
             name: "Harsh Kumar",
-            image: "/teams/Treasurer2.png",
+            image: "/teams/treasurer2.png",
             linkedin: "",
             instagram: "",
         },
