@@ -1,5 +1,7 @@
 import { useState, useMemo } from "react";
 import { events } from "../data/events";
+import SEO from "./SEO";
+import { getBreadcrumbSchema } from "../lib/seo.js";
 import {
   Calendar,
   MapPin,
@@ -128,6 +130,16 @@ export default function Events() {
 
   return (
     <div className="w-full min-h-screen bg-zinc-50 font-sans pb-24 text-zinc-800">
+      <SEO
+        title="Events & Camps"
+        description="NSS BIT Mesra events, community camps, and volunteer drives."
+        canonicalUrl="/events"
+        image="/health.jpeg"
+        schema={getBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "Events", item: "/events" },
+        ])}
+      />
       <div className="relative w-full h-[35vh] sm:h-[45vh] lg:h-[50vh] min-h-[260px] sm:min-h-[320px] lg:min-h-[380px] overflow-hidden flex items-center justify-center">
         <img
           src="/health.jpeg"
