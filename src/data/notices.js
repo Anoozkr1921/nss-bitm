@@ -1,117 +1,137 @@
 export const notices = [
   {
+    date: "17 September 2026",
+    title: "Vishwakarma Puja",
+    description: "NSS organised a traditional celebration honoring Lord Vishwakarma, highlighting the importance of craftsmanship, creativity, skill, and dedication in work.",
+  },
+  {
+    date: "27 August 2026",
+    title: "National Sports Day - Yuva Connect",
+    description: "NSS BIT Mesra celebrated National Sports Day through Yuva Connect, promoting sports, physical fitness, teamwork, sportsmanship, and healthy lifestyles among youth.",
+  },
+  {
     date: "15 August 2026",
     title: "Prabhat Pheri",
-    description: "An early morning march organized to mark Independence Day, fostering patriotic values, social unity, and community awareness across the campus.",
+    description: "An early morning march celebrating Independence Day and promoting patriotism, unity, and community awareness.",
+  },
+  {
+    date: "2 August 2026",
+    title: "Nasha Mukt Yuva",
+    description: "NSS BIT Mesra organized an awareness seminar on drug abuse, highlighting its harmful effects and promoting a healthy, responsible, and substance-free lifestyle among youth.",
+  },
+  {
+    date: "21 June 2026",
+    title: "International Yoga Day",
+    description: "NSS BIT Mesra celebrated International Day of Yoga 2026 with yoga, pranayama, meditation, and wellness activities promoting physical fitness and mental well-being.",
   },
   {
     date: "11 April 2026",
     title: "Blood Donation Camp",
-    description: "Volunteers and students are invited to participate in the voluntary blood donation drive to support healthcare emergency services and save lives.",
+    description: "A voluntary blood donation drive encouraging students to support healthcare services and save lives.",
   },
   {
     date: "2 April 2026",
     title: "Swachhata Abhiyan",
-    description: "A comprehensive cleanliness and sanitation initiative conducted on campus to promote hygiene standards and collective social responsibility.",
+    description: "A campus cleanliness drive promoting hygiene, sanitation, and collective social responsibility.",
   },
   {
     date: "31 January 2026",
     title: "Cycle Marathon",
-    description: "A cycling event organized to promote physical fitness, environmental sustainability, and the adoption of eco-friendly modes of transportation.",
+    description: "A cycling event promoting physical fitness, environmental sustainability, and eco-friendly transportation.",
   },
   {
     date: "26 January 2026",
     title: "Prabhat Pheri",
-    description: "A morning awareness march conducted on Republic Day to spread constitutional values, civic responsibility, and national pride.",
+    description: "A Republic Day awareness march promoting constitutional values, civic responsibility, and national pride.",
   },
   {
     date: "23 January 2026",
     title: "Saraswati Puja",
-    description: "Traditional campus celebration featuring cultural activities and community prayers to observe the auspicious occasion of Saraswati Puja.",
+    description: "A traditional campus celebration featuring prayers and cultural activities for Saraswati Puja.",
   },
   {
     date: "12 january 2026",
     title: "National Youth Festival",
-    description: "The nation chose two students of our campus to represent at the 29th National Youth Festival to be conducted from 10th to 12th January 2025 at Bharat Mandapam, NewDelhi.",
+    description: "Two students from our campus represented the institution at the 29th National Youth Festival at Bharat Mandapam, New Delhi.",
   },
   {
     date: "21 November 2025",
     title: "Unity March",
-    description: "An institutional march organized by volunteers to promote communal harmony, national integration, and shared social peace.",
+    description: "An institutional march promoting communal harmony, national integration, and social unity.",
   },
   {
     date: "9 November 2025",
     title: "Blood Donation Camp",
-    description: "A voluntary healthcare drive conducted in collaboration with local medical authorities to meet the requirements of regional blood banks.",
+    description: "A voluntary blood donation drive conducted to support regional blood banks and healthcare needs.",
   },
   {
     date: "12 October 2025",
     title: "Viksit Bharat Marathon 2025",
-    description: "This event was organized under the national initiative Fit Youth For Viksit Bharat, with the aim of promoting health, fitness, and youth participation in the nation’s developmental journey towards a “Viksit Bharat” (Developed India).",
+    description: "A marathon promoting health, fitness, youth participation, and the vision of Viksit Bharat.",
   },
   {
     date: "25 September 2025",
     title: "Essay on Women in Leadership: Catalysts for Change",
-    description: "The NSS unit of BIT Mesra organized an essay and poster competition on the theme “Women in Leadership: Catalysts for Change” to celebrate and promote women’s empowerment and leadership. Students expressed their ideas creatively, highlighting the vital role of women leaders in driving social progress, inspiring change, and breaking barriers.",
+    description: "An essay and poster competition highlighting women’s empowerment, leadership, and their role in social progress.",
   },
   {
     date: "9 October 2025",
     title: "Consumer Awareness Drive",
-    description: "This programme emphasized the need to protect consumers from exploitation by ensuring they have access to information about products, prices, and safety, thereby empowering them to make informed decisions.",
+    description: "An awareness programme empowering consumers with knowledge about products, prices, safety, and informed choices.",
   },
   {
     date: "9 September 2025",
     title: "Celebration of International Literacy Day",
-    description: "In this event, Various engaging activities, insightful discussions, and impactful awareness campaigns were conducted to inspire students and the community to promote education, eradicate illiteracy, bridge learning gaps, and build a more informed, empowered, and progressive society where knowledge becomes a tool for growth and social transformation.",
+    description: "An awareness programme promoting education, literacy, learning, and social transformation through engaging activities.",
   },
   {
     date: "2 September 2025",
     title: "Awareness Drive on Indian Culture and Values",
-    description: "The NSS unit of BIT Mesra organized an awareness program on 2nd September 2025 to highlight the significance of Gurus and the richness of Indian culture. The programme featured engaging talks, interactive activities, and insightful discussions, through which students reflected on the vital role of teachers, traditional values, and cultural heritage in shaping individuals, guiding society, and fostering moral development.",
+    description: "An awareness programme highlighting the importance of gurus, traditional values, and Indian cultural heritage.",
   },
   {
     date: "29 August 2025",
     title: "Visit to Old Age Home",
-    description: "In this event, NSS volunteers visited an Old Age Home, where they interacted warmly with the residents, sang songs with them, served food, and spent quality time listening to their experiences and stories."
+    description: "NSS volunteers visited an old age home to interact with residents, share meals, and spend meaningful time with them.",
   },
   {
     date: "22 August 2025",
     title: "The Spirit of Selfless Service",
-    description: "In this event, NSS volunteers participated in a meaningful activity based on the theme 'The Spirit of Selfless Service'."
+    description: "NSS volunteers participated in a meaningful activity centered on the theme of selfless service.",
   },
   {
     date: "15 August 2025",
     title: "Prabhat Pheri",
-    description: "An early morning commemorative march held on Independence Day to honor the national legacy and engage community members.",
+    description: "An Independence Day commemorative march promoting national pride and community engagement.",
   },
   {
     date: "8 August 2025",
     title: "Awareness On Anti Ragging",
-    description: "An Anti-Ragging Awareness Programme. Students were encouraged to express their views against ragging through essay writing and poster making competitions."
+    description: "An anti-ragging awareness programme featuring essay writing and poster-making activities.",
   },
   {
     date: "21 June 2025",
     title: "Yoga Sangam",
-    description: "An institutional gathering to celebrate International Yoga Day, emphasizing physical fitness, mental wellness, and holistic health practices.",
+    description: "An International Yoga Day gathering promoting physical fitness, mental wellness, and holistic health.",
   },
   {
     date: "12 April 2025",
     title: "Blood Donation Camp",
-    description: "A campus welfare initiative empowering students and staff to contribute toward community healthcare through voluntary blood donations.",
+    description: "A campus welfare initiative encouraging students and staff to contribute to community healthcare through blood donation.",
   },
   {
     date: "2 February 2025",
     title: "Saraswati Puja",
-    description: "Annual campus prayers and cultural events organized to mark Saraswati Puja and celebrate values of learning, art, and wisdom.",
+    description: "A campus celebration featuring prayers and cultural events honoring learning, art, and wisdom.",
   },
   {
     date: "26 January 2025",
     title: "Prabhat Pheri",
-    description: "A volunteer-driven morning march organized to celebrate Republic Day and enhance civic awareness among the students.",
+    description: "A Republic Day morning march promoting civic awareness and national pride among students.",
   },
   {
     date: "2 October 2024",
     title: "Blood Donation Camp",
-    description: "A mega blood donation drive organized on the occasion of Gandhi Jayanti as a tribute to community service and social welfare.",
+    description: "A mega blood donation drive organized on Gandhi Jayanti to promote community service and social welfare.",
   },
 ];
