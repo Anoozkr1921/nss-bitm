@@ -57,7 +57,7 @@ export default function Notices() {
         title="Notices"
         description="Official announcements, circulars, and notifications from NSS BIT Mesra."
         canonicalUrl="/notice"
-        image="/notice.jpg"
+        image="/notice.webp"
         schema={getBreadcrumbSchema([
           { name: "Home", item: "/" },
           { name: "Notices", item: "/notice" },
@@ -65,7 +65,7 @@ export default function Notices() {
       />
       <div className="relative w-full h-[60vh] min-h-[450px] overflow-hidden">
         <img
-          src="/notice.jpg"
+          src="/notice.webp"
           alt="Notices"
           className="absolute inset-0 w-full h-full object-cover object-[center_73%]"
         />

@@ -40,7 +40,7 @@ export default function ActivityPage() {
                 <div className="h-[4px] w-full bg-[#F6170F]" />
                 <div className="relative w-full">
                     <img
-                        src={activityData.image || "/BACKGROUND.png"}
+                        src={activityData.image || "/BACKGROUND.webp"}
                         alt={title}
                         className="h-[420px] w-full object-cover sm:h-[520px]"
                         draggable="false"

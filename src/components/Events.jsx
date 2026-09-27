@@ -134,7 +134,7 @@ export default function Events() {
         title="Events & Camps"
         description="NSS BIT Mesra events, community camps, and volunteer drives."
         canonicalUrl="/events"
-        image="/health.jpeg"
+        image="/health.webp"
         schema={getBreadcrumbSchema([
           { name: "Home", item: "/" },
           { name: "Events", item: "/events" },
@@ -142,7 +142,7 @@ export default function Events() {
       />
       <div className="relative w-full h-[35vh] sm:h-[45vh] lg:h-[50vh] min-h-[260px] sm:min-h-[320px] lg:min-h-[380px] overflow-hidden flex items-center justify-center">
         <img
-          src="/health.jpeg"
+          src="/health.webp"
           alt="NSS Events"
           className="absolute inset-0 w-full h-full object-cover select-none"
         />

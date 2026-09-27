@@ -28,7 +28,7 @@ export default function App() {
             <>
               <SEO
                 canonicalUrl="/"
-                image="/og-image.png"
+                image="/og-image.jpg"
                 description="Official website of NSS BIT Mesra — National Service Scheme, Birla Institute of Technology, Mesra, Ranchi. Student volunteers serving communities across Jharkhand through camps, drives & outreach."
                 keywords={[
                   "NSS BIT Mesra",

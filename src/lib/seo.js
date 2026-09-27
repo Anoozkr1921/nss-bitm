@@ -5,7 +5,7 @@ export const SITE_CONFIG = {
     "Official website of NSS BIT Mesra (National Service Scheme, Birla Institute of Technology, Mesra, Ranchi). Student-led social outreach, community camps, blood donation drives, and volunteer initiatives in Jharkhand.",
   url: "https://nss.bitmesra.ac.in",
   locale: "en_IN",
-  ogImage: "https://nss.bitmesra.ac.in/og-image.png",
+  ogImage: "https://nss.bitmesra.ac.in/og-image.jpg",
   twitterHandle: "@nssbitmesra",
   keywords: [
     // Primary exact-match terms

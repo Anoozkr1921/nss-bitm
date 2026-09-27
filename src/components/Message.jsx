@@ -75,7 +75,7 @@ export default function Message() {
 
               <div className="flex flex-col items-center gap-4 rounded-[14px] border-2 border-black bg-white p-6 text-center shadow-[0_8px_22px_rgba(0,0,0,0.20)] sm:flex-row sm:items-start sm:gap-5 sm:text-left">
                 <img
-                  src="/Manna.png"
+                  src="/Manna.webp"
                   alt="Prof. Indranil Manna"
                   className="h-92px w-92px rounded-full object-cover"
                   draggable="false"
@@ -101,7 +101,7 @@ export default function Message() {
 
               <div className="flex flex-col items-center gap-4 rounded-[14px] border-2 border-black bg-white p-6 text-center shadow-[0_8px_22px_rgba(0,0,0,0.20)] sm:flex-row sm:items-start sm:gap-5 sm:text-left">
                 <img
-                  src="/dosa.jpg"
+                  src="/dosa.webp"
                   alt="Dr. Praveen Srivastava"
                   className="h-92px w-92px rounded-full object-cover"
                   draggable="false"
@@ -119,7 +119,7 @@ export default function Message() {
 
               <div className="flex flex-col items-center gap-4 rounded-[14px] border-2 border-black bg-white p-6 text-center shadow-[0_8px_22px_rgba(0,0,0,0.20)] sm:flex-row sm:items-start sm:gap-5 sm:text-left">
                 <img
-                  src="/Pandey.png"
+                  src="/Pandey.webp"
                   alt="Dr. O.P. Pandey"
                   className="h-92px w-92px rounded-full object-cover"
                   draggable="false"

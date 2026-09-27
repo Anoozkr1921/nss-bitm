@@ -2,7 +2,7 @@ export const events = [
   {
     id: 1,
     name: "Blood Donation Camp",
-    image: "/BLOOD_CAMP.png",
+    image: "/BLOOD_CAMP.webp",
     category: "Health & Hygiene",
     date: "2026-06-14",
     location: "BIT Mesra Dispensary",
@@ -15,7 +15,7 @@ export const events = [
   {
     id: 2,
     name: "Village Awareness Camp",
-    image: "/VILLAGE_AWARENESS.png",
+    image: "/VILLAGE_AWARENESS.webp",
     category: "Social Awareness & Rallies",
     date: "2026-04-12",
     location: "Kolur Village Community Center",
@@ -28,7 +28,7 @@ export const events = [
   {
     id: 3,
     name: "Cleanliness Drive",
-    image: "/CLEANLINESS.png",
+    image: "/CLEANLINESS.webp",
     category: "Environment & Cleanliness",
     date: "2026-03-22",
     location: "BIT Mesra Campus and Surrounding Areas",
@@ -41,7 +41,7 @@ export const events = [
   {
     id: 4,
     name: "Prabhat Pheri",
-    image: "/PRABHAT_PHERI.png",
+    image: "/PRABHAT_PHERI.webp",
     category: "Social Awareness & Rallies",
     date: "2026-01-26",
     location: "Within BIT Mesra Campus",
@@ -54,7 +54,7 @@ export const events = [
   {
     id: 5,
     name: "Health Awareness Camp",
-    image: "/health_awareness.png",
+    image: "/health_awareness.webp",
     category: "Health & Hygiene",
     date: "2026-05-10",
     location: "Nearby Village : Rudia",
@@ -67,7 +67,7 @@ export const events = [
   {
     id: 6,
     name: "Village Education Program",
-    image: "/VEP.png",
+    image: "/VEP.webp",
     category: "Education & Literacy",
     date: "2026-06-20",
     location: "Government Primary School, Kolur",
@@ -80,7 +80,7 @@ export const events = [
   {
     id: 7,
     name: "Swachh Bharat Abhiyan",
-    image: "/SWACH_BHARAT.JPG",
+    image: "/SWACH_BHARAT.webp",
     category: "Environment & Cleanliness",
     date: "2026-10-02",
     location: "BIT Mesra CAMPUS",
