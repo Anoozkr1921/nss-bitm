@@ -41,33 +41,36 @@ const teamData = {
            role: "Joint Secretary",
             name: "Ritesh Raj",
             image: "/teams/Joint_sec2.png",
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/ritesh-raj-8b8a4b343/",
             instagram: "", 
         },
         {
             role: "Joint Secretary",
             name: "Sourav Agarwal",
             image: "/teams/Joint_Sec.png",
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/sourav-agarwal002/",
             instagram: "",
         },
         {
             role: "Treasurer",
             name: "Divesh Kr Mishra",
             image: "/teams/Treasurer.png",
-            linkedin: "",
+            linkedin: "www.linkedin.com/in/divesh-kr-mishra",
             instagram: "",
         },
         {
-            role: "Treasurer",
+            role: "Joint Treasurer",
             name: "Harsh Kumar",
             image: "/teams/treasurer2.png",
-
+            linkedin: "",
+            instagram: "",
         },
         {
             role: "Joint Treasurer",
             name: "Ashish Singh",
             image: "/teams/Joint_treasurer.png",
+            linkedin: "",
+            instagram: "",
         },
     ],
 
@@ -79,6 +82,7 @@ const teamData = {
                     name: "Kushagra Bhatnagar",
                     role: "Web Incharge",
                     image: "/teams/web cyber coordnator.png",
+                    linkedin: "https://www.linkedin.com/in/kushaagrabhatnagar/",
 
 
                 },
@@ -86,7 +90,7 @@ const teamData = {
                     name: "Arvind Paswan",
                     role: "Web Incharge",
                     image: "/teams/web_incharge.jpg",
-                    linkedin: "",
+                    linkedin: "https://www.linkedin.com/in/arvind-paswan-079300346/",
 
                 },
             ],
@@ -97,6 +101,7 @@ const teamData = {
                 {
                     name: "Shanvi Vats",
                     image: "/teams/design_incharge.jpeg",
+                    linkedin: "https://www.linkedin.com/in/shanvi-vats/",
 
                 },
             ],
@@ -108,6 +113,7 @@ const teamData = {
                     name: "Ashley Jain",
                     role: "Coverage Incharge",
                     image: "/teams/coverage_ic.jpg",
+                    linkedin: "https://www.linkedin.com/in/ashley-jain-54ab303a5/",
 
                 },
             ],

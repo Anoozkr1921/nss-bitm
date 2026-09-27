@@ -20,7 +20,7 @@
 
 export const LAUNCH_CONFIG = {
   /** Master switch. false = skip the experience, go straight to the website. */
-  enabled: true,
+  enabled: false,
 
   /** true  → launch overlay appears on every visit.
    *  false → appears only once per browser (tracked via localStorage). */
