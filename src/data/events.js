@@ -92,16 +92,16 @@ export const events = [
   },
   {
     id: 8,
-    name: "Today's Activities",
+    name: "My Bharat Quiz",
     image: "/events/today_activity.webp",
     photos: [
       "/events/today_activity.webp",
       "/events/today_activity1.webp"
     ],
     category: "Social Awareness & Rallies",
-    date: "2026-09-30",
+    date: "2026-09-29",
     location: "Birla Institute of Technology, Mesra, Ranchi",
-    time: "10:00 AM - 05:00 PM",
+    time: "03:30 PM - 05:30 PM",
     coordinator: "Dr. O.P. Pandey",
     contact: "+91 98450 12345",
     description: "Three Hundred sixteen NSS Volunteers of Birla Institute of Technology Mesra Ranchi Jharkhand registering for MY Bharat and participating in quiz.",
