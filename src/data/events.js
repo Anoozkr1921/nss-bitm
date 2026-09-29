@@ -82,12 +82,29 @@ export const events = [
     name: "Swachh Bharat Abhiyan",
     image: "/SWACH_BHARAT.webp",
     category: "Environment & Cleanliness",
-    date: "2026-10-02",
+    date: "2026-04-02",
     location: "BIT Mesra CAMPUS",
     time: "07:30 AM - 12:00 PM",
     coordinator: "Dr. O.P. Pandey",
     contact: "+91 98450 12345",
     description: "Contributing to the national Swachh Bharat cleanliness and painting mission.",
     detailedDescription: "A mega cleanliness and beautification drive planned for Gandhi Jayanti. NSS BITM volunteers will clean designated areas of the public railway station and central park. Activities include wall painting with social messages, setting up dustbins, and conducting street plays to encourage the general public not to litter."
+  },
+  {
+    id: 8,
+    name: "Today's Activities",
+    image: "/events/today_activity.webp",
+    photos: [
+      "/events/today_activity.webp",
+      "/events/today_activity1.webp"
+    ],
+    category: "Social Awareness & Rallies",
+    date: "2026-09-30",
+    location: "Birla Institute of Technology, Mesra, Ranchi",
+    time: "10:00 AM - 05:00 PM",
+    coordinator: "Dr. O.P. Pandey",
+    contact: "+91 98450 12345",
+    description: "Three Hundred sixteen NSS Volunteers of Birla Institute of Technology Mesra Ranchi Jharkhand registering for MY Bharat and participating in quiz.",
+    detailedDescription: "Three Hundred sixteen NSS Volunteers of Birla Institute of Technology Mesra Ranchi Jharkhand registering for MY Bharat and participating in quiz."
   },
 ];

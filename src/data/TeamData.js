@@ -59,9 +59,16 @@ const teamData = {
             instagram: "",
         },
         {
+            role: "Treasurer",
+            name: "Mangal Kumar",
+            image: "/teams/treasurer2.webp",
+            linkedin: "",
+            instagram: "",
+        },
+        {
             role: "Joint Treasurer",
             name: "Harsh Kumar",
-            image: "/teams/treasurer2.webp",
+            image: "/teams/joint_treasurer2.png",
             linkedin: "",
             instagram: "",
         },
@@ -100,9 +107,43 @@ const teamData = {
             assistantCoordinators: [
                 {
                     name: "Shanvi Vats",
+                    role: "Design Incharge",
                     image: "/teams/design_incharge.webp",
                     linkedin: "https://www.linkedin.com/in/shanvi-vats/",
 
+                },
+            ],
+        },
+        {
+            teamName: "Media & Publicity Team",
+            incharges: [
+                {
+                    name: "Media & Publicity Incharge",
+                    role: "Media & Publicity Incharge",
+                    image: "/teams/media_publicity_ic.webp",
+                    linkedin:"",
+                },
+            ]
+        },
+        {
+            teamName: "Village Literacy Team",
+            incharges: [
+                {
+                    name: "Ekta Kumari",
+                    role: "Village Literacy Incharge",
+                    image: "/teams/village_literacy_ic.webp",
+                    linkedin:"",
+                },
+            ],
+        },
+        {
+            teamName: "Resources Team",
+            incharges: [
+                {
+                    name: "Sadhvi Kumari",
+                    role: "Resources Incharge",
+                    image: "/teams/resources_ic.webp",
+                    linkedin:"",
                 },
             ],
         },
@@ -118,6 +159,7 @@ const teamData = {
                 },
             ],
         },
+
     ],
 };
 

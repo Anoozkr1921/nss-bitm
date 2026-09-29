@@ -334,6 +334,25 @@ export default function Events() {
                     {activeEvent.detailedDescription || activeEvent.description}
                   </p>
                 </div>
+
+                {activeEvent.photos && activeEvent.photos.length > 0 && (
+                  <div className="mt-6">
+                    <h4 className="text-xs sm:text-sm font-bold text-[#19366b] uppercase tracking-wider mb-3">
+                      Event Gallery
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                      {activeEvent.photos.map((photo, index) => (
+                        <div key={index} className="overflow-hidden rounded-xl border border-zinc-200 shadow-sm aspect-[4/3] bg-zinc-100">
+                          <img
+                            src={photo}
+                            alt={`${activeEvent.name} photo ${index + 1}`}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
