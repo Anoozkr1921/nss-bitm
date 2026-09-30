@@ -1,12 +1,24 @@
 import { Link } from "react-router-dom";
+import SEO from "./SEO";
+import { getBreadcrumbSchema } from "../lib/seo.js";
 
 export default function AboutUs() {
   return (
     <section id="about" className="w-full">
+      <SEO
+        title="About Us"
+        description="Learn about NSS BIT Mesra — our mission, history, and student volunteers."
+        canonicalUrl="/about"
+        image="/aboutus/aboutus.jpeg"
+        schema={getBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "About Us", item: "/about" },
+        ])}
+      />
       
       <div className="relative w-full h-[60vh] min-h-[450px] overflow-hidden">
         <img
-          src="/aboutus.jpeg"
+          src="/aboutus/aboutus.jpeg"
           alt="NSS BIT Mesra"
           className="absolute inset-0 w-full h-full object-cover object-[center_40%]"
           draggable="false"
@@ -138,7 +150,7 @@ export default function AboutUs() {
               {
                 name: "Environment",
                 id: "environment",
-                img: "/environment.jpeg",
+                img: "/aboutus/environment.jpeg",
                 tagline: "Preserving nature through sustainable action",
               },
               {

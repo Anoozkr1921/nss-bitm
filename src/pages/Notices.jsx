@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import { notices } from "../data/notices";
 import { Search, Bell, Calendar } from "lucide-react";
+import SEO from "../components/SEO";
+import { getBreadcrumbSchema } from "../lib/seo.js";
 
 import NoticeTable from "../components/Notices/NoticeTable";
 
@@ -51,6 +53,16 @@ export default function Notices() {
 
   return (
     <div className="w-full min-h-screen bg-[#F8FAFC] font-sans">
+      <SEO
+        title="Notices"
+        description="Official announcements, circulars, and notifications from NSS BIT Mesra."
+        canonicalUrl="/notice"
+        image="/notice.jpg"
+        schema={getBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "Notices", item: "/notice" },
+        ])}
+      />
       <div className="relative w-full h-[60vh] min-h-[450px] overflow-hidden">
         <img
           src="/notice.jpg"

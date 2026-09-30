@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import schemes from "../components/GovernmentSchemes/schemes";
 import SchemeCard from "../components/GovernmentSchemes/SchemeCard";
+import SEO from "../components/SEO";
+import { getBreadcrumbSchema } from "../lib/seo.js";
 
 function GovernmentSchemes() {
   const [activeButton, setActiveButton] = useState("Central");
@@ -12,6 +14,16 @@ function GovernmentSchemes() {
 
   return (
     <div className="w-full min-h-screen bg-[#F8FAFC] font-sans">
+      <SEO
+        title="Government Schemes"
+        description="Government welfare schemes and community initiatives supported by NSS BIT Mesra."
+        canonicalUrl="/schemes"
+        image="/GovernmentSchemes_Img.png"
+        schema={getBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "Government Schemes", item: "/schemes" },
+        ])}
+      />
       <div className="relative w-full h-[60vh] min-h-[450px] overflow-hidden">
 
         

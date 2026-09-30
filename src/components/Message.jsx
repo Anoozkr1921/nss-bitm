@@ -99,6 +99,23 @@ export default function Message() {
                 </div>
               </div>
 
+              <div className="flex flex-col items-center gap-4 rounded-[14px] border-2 border-black bg-white p-6 text-center shadow-[0_8px_22px_rgba(0,0,0,0.20)] sm:flex-row sm:items-start sm:gap-5 sm:text-left">
+                <img
+                  src="/dosa.jpg"
+                  alt="Dr. Praveen Srivastava"
+                  className="h-92px w-92px rounded-full object-cover"
+                  draggable="false"
+                />
+                <div className="min-w-0">
+                  <h3 className="text-[18px] font-extrabold text-[#F6170F]">
+                    Message from the Chairperson (Dr. Praveen Srivastava)
+                  </h3>
+                  <p className="mt-2 text-[13px] leading-relaxed text-slate-800">
+                    The National Service Scheme (NSS) unit of Birla Institute of Technology, Mesra, works under the aegis of the Ministry of Youth Affairs & Sports, Government of India, and functions under the Office of the Dean of Student Affairs. True to its motto, the unit gives students a structured way to serve society while developing into responsible, socially aware citizens.
+                    Beyond service, NSS helps volunteers build leadership, teamwork, empathy, and a practical understanding of the social realities of Jharkhand and the nation. Guided by faculty Programme Coordinator and team of Program Officers along with a dedicated student executive team, NSS BIT Mesra continues to connect technical education with meaningful community engagement.
+                  </p>
+                </div>
+              </div>
 
               <div className="flex flex-col items-center gap-4 rounded-[14px] border-2 border-black bg-white p-6 text-center shadow-[0_8px_22px_rgba(0,0,0,0.20)] sm:flex-row sm:items-start sm:gap-5 sm:text-left">
                 <img
