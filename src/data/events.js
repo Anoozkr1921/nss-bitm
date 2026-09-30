@@ -1,6 +1,45 @@
 export const events = [
   {
     id: 1,
+    name: "Swacch Bharat",
+    image: "/swacch_bharat.png",
+    category: "Social Awareness & Rallies",
+    date: "2026-09-28",
+    location: "Sports Complex",
+    time: "03:30 PM - 05:30 PM",
+    coordinator: "Dr. O.P. Pandey",
+    contact: "+91 98450 12345",
+    description: "Awareness Campaign on Swacch Bharat, Nasha Mukt Bharat and TB Mukt Bharat",
+    detailedDescription: "NSS Volunteers of Birla Institute of Technology Mesra Ranchi Jharkhand have prepared posters and developed slogans, poems and skits on Swacch Bharat, Nasha Mukt Bharat and TB Mukt Bharat on 28th September 2026."
+  },
+  {
+    id: 2,
+    name: "NSS Day Celebration",
+    image: "/nss_day.png",
+    category: "Education & Literacy",
+    date: "2026-09-24",
+    location: "CAT HALL",
+    time: "02:00 PM - 06:00 PM",
+    coordinator: "Dr. O.P. Pandey",
+    contact: "+91 98450 12345",
+    description: "Celebration Of 54th NSS Day",
+    detailedDescription: "Birla Institute of Technology Mesra Ranchi Jharkhand  observed the 57th NSS Day on 24th September 2006.Around five hundred twenty volunteers along with POs and faculty members participated. Vice Chancellor Prof. Indranil Manna launched the NSS Website of BIT Mesra. In his address he emphasized that youth can play a vital role in VIKSHIT BHARAT 2047. Swami Sankaranand described the motto of NSS in broader term and deliver speech on Youth and Social Responsibility. Dipak Kumar,Adviser gave a brief on NSS and presented the achievement made by NSS during last 57 years."
+  },
+  {
+    id: 3,
+    name: "MY HEALTH MY RPIDE",
+    image: "/my_heath_my_pride.png",
+    category: "Social Awareness & Rallies",
+    date: "2026-09-24",
+    location: "CAT HALL",
+    time: "03:00 PM - 05:30 PM",
+    coordinator: "Dr. O.P. Pandey",
+    contact: "+91 98450 12345",
+    description: "Awareness on My health My pride campaign",
+    detailedDescription: "NSS Volunteers of Birla Institute of Technology Mesra Ranchi Jharkhand prepared paintings and sketches on MY HELTH MY PRIDE as a part of Nasha Mukt Bharat.",
+  },
+  {
+    id: 4,
     name: "Blood Donation Camp",
     image: "/BLOOD_CAMP.png",
     category: "Health & Hygiene",
@@ -13,7 +52,7 @@ export const events = [
     detailedDescription: "The annual Blood Donation Camp organized by NSS BITM in collaboration with the District Red Cross Blood Bank. Every drop counts! Join us in this noble cause to make a difference in someone's life. Free health check-ups (including Blood Grouping, HB Estimation, and Blood Pressure screening) will be provided to all donors. Certificates of appreciation and refreshments will be distributed."
   },
   {
-    id: 2,
+    id: 5,
     name: "Village Awareness Camp",
     image: "/VILLAGE_AWARENESS.png",
     category: "Social Awareness & Rallies",
@@ -26,7 +65,7 @@ export const events = [
     detailedDescription: "An intensive door-to-door awareness campaign was conducted in Kolur Village. Volunteers interacted with local residents to discuss social issues, government welfare schemes, basic sanitation, and financial literacy. Visual aids, street plays (Nukkad Natak), and interactive sessions were held to engage the villagers and address their concerns."
   },
   {
-    id: 3,
+    id: 6,
     name: "Cleanliness Drive",
     image: "/CLEANLINESS.png",
     category: "Environment & Cleanliness",
@@ -39,7 +78,7 @@ export const events = [
     detailedDescription: "Under the Swachh Bharat initiative, NSS volunteers successfully executed a cleanliness drive inside the BITM campus and the adjacent public roads. The drive focused on segregating plastic waste, clearing dried leaves, and raising awareness about garbage management and sanitation among local vendors."
   },
   {
-    id: 4,
+    id: 7,
     name: "Prabhat Pheri",
     image: "/PRABHAT_PHERI.png",
     category: "Social Awareness & Rallies",
@@ -52,7 +91,7 @@ export const events = [
     detailedDescription: "On the occasion of Republic Day, NSS BITM organized a Prabhat Pheri (morning rally). Volunteers marched with banners and shouted slogans celebrating national integration, environmental preservation, and social unity. The rally concluded with the national flag hoisting ceremony at the BITM Main Ground."
   },
   {
-    id: 5,
+    id: 8,
     name: "Health Awareness Camp",
     image: "/health_awareness.png",
     category: "Health & Hygiene",
@@ -65,7 +104,7 @@ export const events = [
     detailedDescription: "A comprehensive health and hygiene awareness camp was set up to support underprivileged families. A team of doctors conducted free general health check-ups and pediatric consultations. NSS volunteers demonstrated proper hand-washing techniques, distributed hygiene kits (soaps, sanitizers, sanitary pads), and spoke on preventing seasonal vector-borne diseases like Dengue and Malaria."
   },
   {
-    id: 6,
+    id: 9,
     name: "Village Education Program",
     image: "/VEP.png",
     category: "Education & Literacy",
@@ -78,7 +117,7 @@ export const events = [
     detailedDescription: "This program aims to bridge the educational gap for rural students. NSS volunteers will conduct interactive workshops on science experiments, mathematics shortcuts, and basic computer applications. We will also be distributing stationery kits (notebooks, pens, drawing materials) and hosting storytelling and art sessions to make learning fun."
   },
   {
-    id: 7,
+    id: 10,
     name: "Swachh Bharat Abhiyan",
     image: "/SWACH_BHARAT.JPG",
     category: "Environment & Cleanliness",
@@ -91,7 +130,7 @@ export const events = [
     detailedDescription: "A mega cleanliness and beautification drive planned for Gandhi Jayanti. NSS BITM volunteers will clean designated areas of the public railway station and central park. Activities include wall painting with social messages, setting up dustbins, and conducting street plays to encourage the general public not to litter."
   },
   {
-    id: 8,
+    id: 11,
     name: "Cycle Marathon",
     image: "/Cycle_marathon.png",
     category: "Fitness & Rallies",
