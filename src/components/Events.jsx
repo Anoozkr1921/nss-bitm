@@ -134,7 +134,7 @@ export default function Events() {
         title="Events & Camps"
         description="NSS BIT Mesra events, community camps, and volunteer drives."
         canonicalUrl="/events"
-        image="/health.jpeg"
+        image="/health.webp"
         schema={getBreadcrumbSchema([
           { name: "Home", item: "/" },
           { name: "Events", item: "/events" },
@@ -142,7 +142,7 @@ export default function Events() {
       />
       <div className="relative w-full h-[35vh] sm:h-[45vh] lg:h-[50vh] min-h-[260px] sm:min-h-[320px] lg:min-h-[380px] overflow-hidden flex items-center justify-center">
         <img
-          src="/health.jpeg"
+          src="/health.webp"
           alt="NSS Events"
           className="absolute inset-0 w-full h-full object-cover select-none"
         />
@@ -334,6 +334,25 @@ export default function Events() {
                     {activeEvent.detailedDescription || activeEvent.description}
                   </p>
                 </div>
+
+                {activeEvent.photos && activeEvent.photos.length > 0 && (
+                  <div className="mt-6">
+                    <h4 className="text-xs sm:text-sm font-bold text-[#19366b] uppercase tracking-wider mb-3">
+                      Event Gallery
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                      {activeEvent.photos.map((photo, index) => (
+                        <div key={index} className="overflow-hidden rounded-xl border border-zinc-200 shadow-sm aspect-[4/3] bg-zinc-100">
+                          <img
+                            src={photo}
+                            alt={`${activeEvent.name} photo ${index + 1}`}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 {
   "name": "NSS BIT Mesra",
   "short_name": "NSS BITM",
-  "description": "Official app for NSS BIT Mesra — student community service.",
+  "description": "Official website of NSS BIT Mesra — National Service Scheme, Birla Institute of Technology, Mesra. Student-led community service, camps, and social outreach in Jharkhand.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -9,8 +9,9 @@
   "icons": [
     {
       "src": "/logos/nss_logo.png",
-      "sizes": "192x192 512x512",
-      "type": "image/png"
+      "sizes": "118x118",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

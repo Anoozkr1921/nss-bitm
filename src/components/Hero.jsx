@@ -7,7 +7,7 @@ export default function Hero() {
             <div className="relative w-full">
                 
                 <img
-                    src="/BACKGROUND.png"
+                    src="/BACKGROUND.webp"
                     alt="NSS BIT Mesra"
                     className="h-[300px] w-full object-cover sm:h-[450px]"
                     draggable="false"

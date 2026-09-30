@@ -100,7 +100,7 @@ const Teams = () => {
         title="Our Team"
         description="Meet the student coordinators and faculty advisors leading NSS BIT Mesra."
         canonicalUrl="/teams"
-        image="/teams/President.jpg"
+        image="/teams/President.webp"
         schema={getBreadcrumbSchema([
           { name: "Home", item: "/" },
           { name: "Teams", item: "/teams" },

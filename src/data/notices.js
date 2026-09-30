@@ -1,5 +1,10 @@
 export const notices = [
   {
+    date: "29 September 2026",
+    title: "My Bharat Quiz",
+    description: "Three hundred sixteen NSS volunteers of Birla Institute of Technology Mesra, Ranchi registered for MY Bharat and participated in the quiz competition.",
+  },
+  {
     date: "17 September 2026",
     title: "Vishwakarma Puja",
     description: "NSS organised a traditional celebration honoring Lord Vishwakarma, highlighting the importance of craftsmanship, creativity, skill, and dedication in work.",

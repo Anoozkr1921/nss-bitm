@@ -1,11 +1,23 @@
 import { useMemo, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+
 function NavItem({ label, to, onClick }) {
+  const location = useLocation();
+
+  const handleClick = (e) => {
+    if (location.pathname === to) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }
+    if (onClick) onClick(e);
+  };
+
   return (
     <NavLink
       to={to}
       end={to === "/"}
-      onClick={onClick}
+      onClick={handleClick}
       className={({ isActive }) =>
         [
           "w-full sm:flex-1",
