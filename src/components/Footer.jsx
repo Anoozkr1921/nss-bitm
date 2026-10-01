@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 
 const NAV_LINKS = [
   { label: "Home",               to: "/" },
@@ -47,6 +47,16 @@ const SOCIALS = [
 ];
 
 export default function Footer() {
+  const location = useLocation();
+
+  const handleNavClick = (to) => {
+    if (location.pathname === to) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }
+  };
+
   return (
     <footer className="w-full bg-[#19366B] font-sans">
 
@@ -59,13 +69,17 @@ export default function Footer() {
 
           {/* Column 1 — Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <img src="/logos/nss_logo.png" alt="NSS Logo" className="h-12 w-auto object-contain" />
+            <Link
+              to="/"
+              onClick={() => handleNavClick("/")}
+              className="flex items-center gap-3 mb-4 inline-flex group"
+            >
+              <img src="/logos/nss_logo.png" alt="NSS Logo" className="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
               <div>
                 <p className="text-white font-extrabold text-sm tracking-widest uppercase leading-tight">NSS</p>
                 <p className="text-white/70 text-xs tracking-wider uppercase leading-tight">BIT Mesra</p>
               </div>
-            </div>
+            </Link>
             <p className="text-white/60 text-sm leading-relaxed">
               Not Me But You — developing student youth into socially responsible citizens through community service.
             </p>
@@ -98,6 +112,7 @@ export default function Footer() {
                   <NavLink
                     to={link.to}
                     end={link.to === "/"}
+                    onClick={() => handleNavClick(link.to)}
                     className={({ isActive }) =>
                       `text-sm transition-colors duration-150 ${
                         isActive

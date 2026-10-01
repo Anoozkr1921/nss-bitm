@@ -18,7 +18,7 @@ function GovernmentSchemes() {
         title="Government Schemes"
         description="Government welfare schemes and community initiatives supported by NSS BIT Mesra."
         canonicalUrl="/schemes"
-        image="/GovernmentSchemes_Img.png"
+        image="/GovernmentSchemes_Img.webp"
         schema={getBreadcrumbSchema([
           { name: "Home", item: "/" },
           { name: "Government Schemes", item: "/schemes" },
@@ -28,7 +28,7 @@ function GovernmentSchemes() {
 
         
         <img
-          src="/GovernmentSchemes_Img.png"
+          src="/GovernmentSchemes_Img.webp"
           alt="Government Schemes"
           className="absolute inset-0 w-full h-full object-cover"
         />

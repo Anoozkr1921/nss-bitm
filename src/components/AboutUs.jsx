@@ -9,7 +9,7 @@ export default function AboutUs() {
         title="About Us"
         description="Learn about NSS BIT Mesra — our mission, history, and student volunteers."
         canonicalUrl="/about"
-        image="/aboutus/aboutus.jpeg"
+        image="/aboutus/aboutus.webp"
         schema={getBreadcrumbSchema([
           { name: "Home", item: "/" },
           { name: "About Us", item: "/about" },
@@ -18,7 +18,7 @@ export default function AboutUs() {
       
       <div className="relative w-full h-[60vh] min-h-[450px] overflow-hidden">
         <img
-          src="/aboutus/aboutus.jpeg"
+          src="/aboutus/aboutus.webp"
           alt="NSS BIT Mesra"
           className="absolute inset-0 w-full h-full object-cover object-[center_40%]"
           draggable="false"
@@ -138,25 +138,25 @@ export default function AboutUs() {
               {
                 name: "Education",
                 id: "education",
-                img: "/education.png",
+                img: "/education.webp",
                 tagline: "Bridging knowledge gaps in rural communities",
               },
               {
                 name: "Society",
                 id: "society",
-                img: "/society.jpeg",
+                img: "/society.webp",
                 tagline: "Empowering people through outreach & awareness",
               },
               {
                 name: "Environment",
                 id: "environment",
-                img: "/aboutus/environment.jpeg",
+                img: "/aboutus/environment.webp",
                 tagline: "Preserving nature through sustainable action",
               },
               {
                 name: "Health",
                 id: "health",
-                img: "/health.png",
+                img: "/health.webp",
                 tagline: "Promoting wellbeing across communities",
               },
             ].map((domain) => (

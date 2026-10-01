@@ -2,19 +2,45 @@ export const SITE_CONFIG = {
   name: "NSS BIT Mesra",
   fullTitle: "NSS BIT Mesra — National Service Scheme, BIT Mesra",
   description:
-    "National Service Scheme unit of BIT Mesra, Ranchi. Serving the community through student-led initiatives, camps, and social outreach since 1969.",
+    "Official website of NSS BIT Mesra (National Service Scheme, Birla Institute of Technology, Mesra, Ranchi). Student-led social outreach, community camps, blood donation drives, and volunteer initiatives in Jharkhand.",
   url: "https://nss.bitmesra.ac.in",
   locale: "en_IN",
-  ogImage: "https://nss.bitmesra.ac.in/og-image.png",
+  ogImage: "https://nss.bitmesra.ac.in/og-image.webp",
   twitterHandle: "@nssbitmesra",
   keywords: [
+    // Primary exact-match terms
     "NSS BIT Mesra",
+    "NSS BITM",
+    "nss bitmesra",
+    "NSS Bit Mesra",
+    "nss bit mesra website",
+    // Full-form variants
+    "National Service Scheme BIT Mesra",
+    "National Service Scheme Birla Institute of Technology Mesra",
+    "NSS BIT Mesra Ranchi",
+    "NSS BIT Mesra Jharkhand",
+    // Institution variants
+    "BIT Mesra NSS",
+    "Birla Institute of Technology Mesra NSS",
+    "BITM NSS",
+    "BIT Mesra student volunteer",
+    "BIT Mesra community service",
+    // Activity-based searches
+    "NSS blood donation camp Ranchi",
+    "NSS BIT Mesra events",
+    "NSS BIT Mesra camps",
+    "NSS BIT Mesra volunteer",
+    "NSS BIT Mesra activities",
+    "NSS BIT Mesra notice",
+    "NSS BIT Mesra team",
+    "NSS Ranchi college",
+    // Generic NSS
     "National Service Scheme",
-    "BIT Mesra",
-    "Ranchi",
-    "student volunteer",
-    "social outreach",
-    "community service",
+    "NSS India",
+    "student social service",
+    "community outreach Ranchi",
+    "social outreach Jharkhand",
+    "student volunteer program India",
   ],
 };
 
@@ -109,7 +135,7 @@ export function constructMetadata({
       siteName: SITE_CONFIG.name,
       images: [
         isDefaultOg
-          ? { url: imageUrl, width: 1200, height: 630, alt: pageTitle }
+          ? { url: imageUrl, width: 1774, height: 887, alt: pageTitle }
           : { url: imageUrl, alt: pageTitle },
       ],
       locale: SITE_CONFIG.locale || "en_IN",
@@ -147,12 +173,39 @@ export function getRootSchema() {
         "@type": "Organization",
         "@id": `${SITE_CONFIG.url}/#organization`,
         name: SITE_CONFIG.name,
-        alternateName: "National Service Scheme BIT Mesra",
+        alternateName: [
+          "National Service Scheme BIT Mesra",
+          "NSS BITM",
+          "NSS Birla Institute of Technology Mesra",
+          "nss bitmesra",
+        ],
         url: SITE_CONFIG.url,
-        logo: `${SITE_CONFIG.url}/logos/nss_logo.png`,
+        logo: {
+          "@type": "ImageObject",
+          url: `${SITE_CONFIG.url}/logos/nss_logo.png`,
+          width: 512,
+          height: 512,
+        },
         image: SITE_CONFIG.ogImage,
         description: SITE_CONFIG.description,
+        foundingDate: "1969",
         email: "nss@bitmesra.ac.in",
+        keywords: "NSS BIT Mesra, National Service Scheme, student volunteer, community service, Ranchi, Jharkhand",
+        areaServed: {
+          "@type": "State",
+          name: "Jharkhand",
+          containedInPlace: {
+            "@type": "Country",
+            name: "India",
+          },
+        },
+        contactPoint: {
+          "@type": "ContactPoint",
+          email: "nss@bitmesra.ac.in",
+          contactType: "general",
+          areaServed: "IN",
+          availableLanguage: "English",
+        },
         address: {
           "@type": "PostalAddress",
           streetAddress: "NSS Office, Sports Complex, BIT Mesra",
@@ -164,6 +217,7 @@ export function getRootSchema() {
         parentOrganization: {
           "@type": "CollegeOrUniversity",
           name: "Birla Institute of Technology, Mesra",
+          alternateName: ["BIT Mesra", "BITM"],
           url: "https://www.bitmesra.ac.in/",
         },
         sameAs: [
@@ -176,11 +230,75 @@ export function getRootSchema() {
         "@id": `${SITE_CONFIG.url}/#website`,
         url: SITE_CONFIG.url,
         name: SITE_CONFIG.name,
+        alternateName: "NSS BIT Mesra Official Website",
         description: SITE_CONFIG.description,
         publisher: {
           "@id": `${SITE_CONFIG.url}/#organization`,
         },
         inLanguage: "en-IN",
+        potentialAction: {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: `${SITE_CONFIG.url}/events?q={search_term_string}`,
+          },
+          "query-input": "required name=search_term_string",
+        },
+      },
+    ],
+  };
+}
+
+/**
+ * Returns JSON-LD FAQPage structured data for NSS BIT Mesra.
+ * Helps Google show rich FAQ results for "nss bit mesra" searches.
+ *
+ * @returns {Object} Schema.org FAQPage object
+ */
+export function getFaqSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is NSS BIT Mesra?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NSS BIT Mesra is the National Service Scheme unit of Birla Institute of Technology, Mesra (BIT Mesra), Ranchi, Jharkhand. It is a student-led volunteer organization that conducts community service activities, social outreach camps, blood donation drives, environmental campaigns, and educational programs since 1969.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can I join NSS BIT Mesra?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Students enrolled at BIT Mesra can join NSS BIT Mesra by contacting the NSS office at nss@bitmesra.ac.in or visiting the NSS office in the Sports Complex on campus during enrollment drives at the start of each academic year.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What activities does NSS BIT Mesra conduct?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NSS BIT Mesra conducts a wide range of activities including blood donation camps, tree plantation drives, cleanliness campaigns (Swachh Bharat), health awareness camps, digital literacy programs, rural outreach, and special camps in nearby villages of Jharkhand.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where is NSS BIT Mesra located?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NSS BIT Mesra is located at the NSS Office, Sports Complex, Birla Institute of Technology, Mesra, Ranchi, Jharkhand - 835215, India.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the motto of NSS BIT Mesra?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The motto of NSS BIT Mesra (and all NSS units in India) is 'Not Me, But You' — reflecting the spirit of selfless service and democratic living.",
+        },
       },
     ],
   };
@@ -192,6 +310,7 @@ export function getRootSchema() {
  * @param {Array<{ name?: string, label?: string, title?: string, item?: string, url?: string, href?: string, to?: string } | string>} [breadcrumbs]
  * @returns {Object} Schema.org BreadcrumbList object
  */
+
 export function getBreadcrumbSchema(breadcrumbs = []) {
   const itemListElement = breadcrumbs.map((crumb, index) => {
     let name = "";
@@ -388,6 +507,7 @@ export default {
   constructMetadata,
   updateDocumentMetadata,
   getRootSchema,
+  getFaqSchema,
   getBreadcrumbSchema,
   getEventSchema,
 };

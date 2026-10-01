@@ -2,15 +2,15 @@ import React from 'react'
 import Navbar from './Navbar'
 import { Outlet } from 'react-router-dom'
 import Footer from './Footer'
-import SEO from './SEO'
+import SecretSignature from './SecretSignature'
 
 function Layout() {
   return (
     <div>
-        <SEO />
         <Navbar/>
         <Outlet/>
         <Footer/>
+        <SecretSignature/>
     </div>
   )
 }
