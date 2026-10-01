@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2142" />
+      <stop offset="50%" stop-color="#19366b" />
+      <stop offset="100%" stop-color="#244b91" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF9933" />
+      <stop offset="50%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#138808" />
+    </linearGradient>
+    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6170f" />
+      <stop offset="100%" stop-color="#d0110a" />
+    </linearGradient>
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad1)" />
+  <rect width="800" height="500" fill="url(#gridPattern)" />
+
+  <!-- Decorative Orbs -->
+  <circle cx="700" cy="80" r="160" fill="#f6170f" fill-opacity="0.12" filter="blur(40px)" />
+  <circle cx="100" cy="420" r="180" fill="#FF9933" fill-opacity="0.08" filter="blur(50px)" />
+  <circle cx="400" cy="250" r="220" fill="#19366b" fill-opacity="0.4" />
+
+  <!-- Tricolor top stripe -->
+  <rect x="0" y="0" width="800" height="6" fill="url(#accentGrad)" />
+
+  <!-- Center Card Container -->
+  <g transform="translate(400, 240)">
+    <!-- Outer dashed boundary -->
+    <rect x="-240" y="-140" width="480" height="280" rx="20" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" stroke-dasharray="8 8" />
+    
+    <!-- Icon Container -->
+    <circle cx="0" cy="-45" r="44" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.5" />
+    
+    <!-- Camera / Image Icon -->
+    <g transform="translate(-20, -65)">
+      <path d="M 5 12 C 5 9.8 6.8 8 9 8 L 13 8 L 15 5 C 15.6 4.1 16.6 3.5 17.7 3.5 L 22.3 3.5 C 23.4 3.5 24.4 4.1 25 5 L 27 8 L 31 8 C 33.2 8 35 9.8 35 12 L 35 30 C 35 32.2 33.2 34 31 34 L 9 34 C 6.8 34 5 32.2 5 30 Z" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="20" cy="21" r="7" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+      <circle cx="28" cy="13" r="1.5" fill="#f6170f"/>
+    </g>
+
+    <!-- Badge -->
+    <rect x="-85" y="16" width="170" height="26" rx="13" fill="url(#redAccent)" />
+    <text x="0" y="33" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">
+      EVENT PHOTO 1
+    </text>
+
+    <!-- Title -->
+    <text x="0" y="70" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" letter-spacing="0.5">
+      Gallery Image Placeholder
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="95" text-anchor="middle" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400">
+      NSS BIT Mesra • Replace image path in events.js
+    </text>
+  </g>
+
+  <!-- Corner watermark -->
+  <text x="760" y="475" text-anchor="end" fill="#ffffff" fill-opacity="0.3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="1">
+    NSS BITM GALLERY
+  </text>
+</svg>
