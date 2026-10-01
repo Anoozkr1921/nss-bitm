@@ -29,8 +29,8 @@ export const events = [
     description: "Quiz on My Bharat",
     detailedDescription: "NSS BIT Mesra organized a quiz on My Bharat as a part of Nasha Mukt Bharat.Three Hundred sixteen NSS Volunteers of Birla Institute of Technology Mesra Ranchi Jharkhand registering for MY Bharat and participating in quiz.",
     gallery: [
-      "/my_bharat_quiz_2.png",
-
+      "/my_bharat_quiz_1.png",
+      "/my_bharat_quiz_2.png"
     ]
   },
   {

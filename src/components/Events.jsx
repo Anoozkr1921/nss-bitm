@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { events } from "../data/events";
 import SEO from "./SEO";
 import { getBreadcrumbSchema } from "../lib/seo.js";
@@ -9,7 +9,11 @@ import {
   User,
   X,
   ChevronRight,
-  Search
+  ChevronLeft,
+  Search,
+  Images,
+  Maximize2,
+  Camera
 } from "lucide-react";
 
 const formatDate = (dateStr) => {
@@ -35,6 +39,7 @@ const inferCategory = (name) => {
 };
 
 const EventCard = ({ event, openModal, formatDate }) => {
+  const galleryList = event.gallery || event.photos || [];
   return (
     <div
       onClick={() => openModal(event)}
@@ -51,6 +56,12 @@ const EventCard = ({ event, openModal, formatDate }) => {
         <div className="absolute top-3 left-3 bg-[#19366b] text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
           {event.category}
         </div>
+        {galleryList.length > 0 && (
+          <div className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-sm border border-white/20">
+            <Images className="h-3 w-3 text-white" />
+            <span>{galleryList.length} Photos</span>
+          </div>
+        )}
       </div>
 
       <div className="p-6 flex flex-col flex-grow">
@@ -92,6 +103,28 @@ export default function Events() {
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [lightbox, setLightbox] = useState(null);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setLightbox(null);
+      } else if (e.key === "ArrowLeft") {
+        setLightbox((prev) => ({
+          ...prev,
+          index: (prev.index - 1 + prev.images.length) % prev.images.length,
+        }));
+      } else if (e.key === "ArrowRight") {
+        setLightbox((prev) => ({
+          ...prev,
+          index: (prev.index + 1) % prev.images.length,
+        }));
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [lightbox]);
 
   const categories = [
     "All",
@@ -333,27 +366,188 @@ export default function Events() {
                   </p>
                 </div>
 
-                {activeEvent.photos && activeEvent.photos.length > 0 && (
-                  <div className="mt-6">
-                    <h4 className="text-xs sm:text-sm font-bold text-[#19366b] uppercase tracking-wider mb-3">
-                      Event Gallery
-                    </h4>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                      {activeEvent.photos.map((photo, index) => (
-                        <div key={index} className="overflow-hidden rounded-xl border border-zinc-200 shadow-sm aspect-[4/3] bg-zinc-100">
-                          <img
-                            src={photo}
-                            alt={`${activeEvent.name} photo ${index + 1}`}
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                          />
-                        </div>
-                      ))}
+                {(() => {
+                  const galleryList = activeEvent.gallery || activeEvent.photos || [];
+                  if (galleryList.length === 0) return null;
+                  return (
+                    <div className="mt-6 pt-6 border-t border-zinc-150">
+                      <div className="flex items-center justify-between mb-3.5">
+                        <h4 className="text-xs sm:text-sm font-bold text-[#19366b] uppercase tracking-wider flex items-center gap-2">
+                          <Images className="h-4 w-4 text-[#f6170f]" />
+                          Event Gallery
+                        </h4>
+                        <span className="text-[11px] font-semibold text-[#19366b] bg-blue-50 border border-blue-100 px-2.5 py-0.5 rounded-full">
+                          {galleryList.length} Photos
+                        </span>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
+                        {galleryList.map((imgSrc, idx) => (
+                          <div
+                            key={idx}
+                            onClick={() =>
+                              setLightbox({
+                                images: galleryList,
+                                index: idx,
+                                title: activeEvent.name,
+                              })
+                            }
+                            className="group relative aspect-[16/10] sm:aspect-[4/3] rounded-xl overflow-hidden bg-zinc-100 border border-zinc-200 shadow-sm cursor-pointer hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 select-none"
+                          >
+                            <img
+                              src={imgSrc}
+                              alt={`${activeEvent.name} photo ${idx + 1}`}
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                              onError={(e) => {
+                                e.currentTarget.style.display = "none";
+                                if (e.currentTarget.nextElementSibling) {
+                                  e.currentTarget.nextElementSibling.style.display = "flex";
+                                }
+                              }}
+                            />
+
+                            <div className="hidden w-full h-full flex-col items-center justify-center p-4 text-center bg-gradient-to-br from-blue-50/60 to-slate-100 text-[#19366b]">
+                              <div className="w-10 h-10 rounded-full bg-white shadow-sm border border-blue-100 flex items-center justify-center mb-2">
+                                <Camera className="w-5 h-5 text-[#19366b]/70" />
+                              </div>
+                              <span className="text-xs font-bold text-[#19366b]">Photo {idx + 1}</span>
+                              <span className="text-[10px] text-zinc-500 mt-0.5">Placeholder • Add in events.js</span>
+                            </div>
+
+                            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center text-white">
+                              <span className="bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5 shadow-md">
+                                <Maximize2 className="w-3.5 h-3.5" />
+                                <span>View Photo</span>
+                              </span>
+                            </div>
+
+                            <div className="absolute bottom-2 left-2 pointer-events-none">
+                              <span className="bg-black/60 backdrop-blur-sm text-white text-[10px] font-medium px-2 py-0.5 rounded-md">
+                                Photo {idx + 1} of {galleryList.length}
+                              </span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
+                  );
+                })()}
               </div>
             </div>
           </div>
+        </div>
+      )}
+
+      {lightbox && (
+        <div
+          className="fixed inset-0 z-[60] bg-black/90 backdrop-blur-md flex flex-col items-center justify-between p-4 sm:p-6 animate-fade-in"
+          onClick={() => setLightbox(null)}
+        >
+          <div
+            className="w-full max-w-5xl flex items-center justify-between text-white z-10 py-2"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div>
+              <h3 className="text-base sm:text-lg font-bold text-white leading-tight">
+                {lightbox.title}
+              </h3>
+              <p className="text-xs text-zinc-400">
+                Photo {lightbox.index + 1} of {lightbox.images.length}
+              </p>
+            </div>
+
+            <button
+              onClick={() => setLightbox(null)}
+              className="bg-white/10 hover:bg-white/20 text-white p-2 rounded-full backdrop-blur-sm transition-all focus:outline-none cursor-pointer"
+              title="Close preview"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+
+          <div
+            className="relative w-full max-w-5xl flex-1 flex items-center justify-center my-2 select-none"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {lightbox.images.length > 1 && (
+              <button
+                onClick={() =>
+                  setLightbox((prev) => ({
+                    ...prev,
+                    index: (prev.index - 1 + prev.images.length) % prev.images.length,
+                  }))
+                }
+                className="absolute left-2 sm:left-4 z-10 bg-black/50 hover:bg-black/80 text-white p-2.5 sm:p-3 rounded-full backdrop-blur-sm transition-all cursor-pointer shadow-lg border border-white/10"
+                title="Previous photo"
+              >
+                <ChevronLeft className="h-5 w-5" />
+              </button>
+            )}
+
+            <div className="relative max-h-[75vh] max-w-full flex items-center justify-center overflow-hidden rounded-xl bg-black/40 border border-white/10 shadow-2xl">
+              <img
+                src={lightbox.images[lightbox.index]}
+                alt={`${lightbox.title} photo ${lightbox.index + 1}`}
+                className="max-h-[75vh] w-auto max-w-full object-contain animate-scale-up"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                  if (e.currentTarget.nextElementSibling) {
+                    e.currentTarget.nextElementSibling.style.display = "flex";
+                  }
+                }}
+              />
+              <div className="hidden flex-col items-center justify-center p-12 text-center text-white min-h-[260px] min-w-[260px]">
+                <Camera className="w-12 h-12 text-zinc-400 mb-3" />
+                <span className="text-base font-semibold">Photo {lightbox.index + 1}</span>
+                <span className="text-xs text-zinc-400 mt-1">Placeholder Image</span>
+              </div>
+            </div>
+
+            {lightbox.images.length > 1 && (
+              <button
+                onClick={() =>
+                  setLightbox((prev) => ({
+                    ...prev,
+                    index: (prev.index + 1) % prev.images.length,
+                  }))
+                }
+                className="absolute right-2 sm:right-4 z-10 bg-black/50 hover:bg-black/80 text-white p-2.5 sm:p-3 rounded-full backdrop-blur-sm transition-all cursor-pointer shadow-lg border border-white/10"
+                title="Next photo"
+              >
+                <ChevronRight className="h-5 w-5" />
+              </button>
+            )}
+          </div>
+
+          {lightbox.images.length > 1 && (
+            <div
+              className="flex items-center gap-3 z-10 py-2 px-4 bg-black/40 backdrop-blur-md rounded-2xl border border-white/10"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {lightbox.images.map((thumb, tIdx) => (
+                <button
+                  key={tIdx}
+                  onClick={() =>
+                    setLightbox((prev) => ({
+                      ...prev,
+                      index: tIdx,
+                    }))
+                  }
+                  className={`w-14 h-10 sm:w-16 sm:h-12 rounded-lg overflow-hidden border-2 transition-all cursor-pointer ${
+                    lightbox.index === tIdx
+                      ? "border-[#f6170f] scale-105 shadow-md"
+                      : "border-white/20 opacity-60 hover:opacity-100"
+                  }`}
+                >
+                  <img
+                    src={thumb}
+                    alt="Thumbnail"
+                    className="w-full h-full object-cover"
+                  />
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       )}
     </div>
