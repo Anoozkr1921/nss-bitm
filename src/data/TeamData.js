@@ -103,18 +103,6 @@ const teamData = {
             ],
         },
         {
-            teamName: "Design Team",
-            assistantCoordinators: [
-                {
-                    name: "Shanvi Vats",
-                    role: "Design Incharge",
-                    image: "/teams/design_incharge.webp",
-                    linkedin: "https://www.linkedin.com/in/shanvi-vats/",
-
-                },
-            ],
-        },
-        {
             teamName: "Media & Publicity Team",
             incharges: [
                 {
@@ -148,8 +136,26 @@ const teamData = {
             ],
         },
         {
+            teamName: "Event Team",
+            incharges: [
+                {
+                    name: "Akshit Punia",
+                    role: "Event Incharge",
+                    image: "/teams/event_ic.webp",
+                    linkedin:"https://www.linkedin.com/in/akshit-punia-00152b33b/",
+                },
+            ],
+        },
+        {
             teamName: "Coverage Team",
             incharges: [
+                {
+                    name: "Shanvi Vats",
+                    role: "Design Incharge",
+                    image: "/teams/design_incharge.webp",
+                    linkedin: "https://www.linkedin.com/in/shanvi-vats/",
+
+                },
                 {
                     name: "Ashley Jain",
                     role: "Coverage Incharge",
